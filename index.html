@@ -5,7 +5,26 @@
     <title>LOREM IPSUM</title>
     <link rel="stylesheet" type="text/css" href="reset.css" defer>
     <style>
-       body>header {
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;700&display=swap');
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 100;
+            src: local('Josefin Slab'), local("Times New Roman"), local(serif);
+        }
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 300;
+            src: local('Josefin Slab'), local("Times New Roman"), local(serif);
+        }
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 700;
+            src: local('Josefin Slab'), local("Times New Roman"), local(serif);
+        }
+        body>header {
             border:solid hsl(0, 0%, 16%);
             border-width: 1px 6px;
             height: calc(100vh / 3);
