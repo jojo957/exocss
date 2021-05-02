@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+h1, h2, h3{
+    font-size: inherit;
+    font-weight: normal;
+}
+a {
+    color: inherit;
+    cursor: none;
+    text-decoration: none;
+}
+html, body {
+    min-height: 100%;
+}
