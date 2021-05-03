@@ -5,7 +5,25 @@
     <title>LOREM IPSUM</title>
     <link rel="stylesheet" type="text/css" href="reset.css" defer>
     <style>
-       body>header {
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 100;
+            src: url("./assets/font/static/JosefinSlab-Thin.ttf") format("truetype"), local("Times New Roman"), local(serif);
+        }
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 300;
+            src: url("./assets/font/static/JosefinSlab-Light.ttf") format("truetype"), local("Times New Roman"), local(serif);
+        }
+        @font-face {
+            font-family: nakama;
+            font-style: normal;
+            font-weight: 700;
+            src: url("./assets/font/static/JosefinSlab-Bold.ttf") format("truetype"), local("Times New Roman"), local(serif);
+        }
+        body>header {
             border:solid hsl(0, 0%, 16%);
             border-width: 1px 6px;
             height: calc(100vh / 3);
@@ -17,6 +35,37 @@
        }
        main {
            padding: 18px;
+       }
+       body {
+           font-size: 12pt;
+           color: hsl(0, 0%, 16%)
+       }
+       h1 {
+           font-weight: bold;
+           font-size: 165%;
+           letter-spacing: 1.5em;
+           line-height: 180%;
+       }
+       h2 {
+           font-weight: bold;
+           font-size: 145%;
+       }
+       h3 {
+           font-weight: normal;
+           font-style: italic;
+           font-size: 145%;
+       }
+       a {
+           text-decoration: underline;
+           text-underline-offset: 2px;
+           font-weight: 300;
+       }
+       section, main+footer {
+           font-weight: 300;
+           font-size: inherit;
+       }
+       body header h2 {
+           color: green !important;
        }
     </style>
 </head>
